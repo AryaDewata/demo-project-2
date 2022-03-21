@@ -111,6 +111,7 @@ header .social li a#atomic:hover { color: rgb(255, 153, 0); }
 /* nav-wrap */
 #nav-wrap {
    /* font: 12px 'opensans-bold', sans-serif; */
+   padding-left: 23%;
    width: 100%;
    text-transform: uppercase;
    letter-spacing: 2.5px;
