@@ -6,22 +6,19 @@
 
 /* ================================================================== */
 
+
 @media only screen and (max-width: 1024px) {
-
-    /* header styles */
-
+    /* header */
    header .banner-text h1 {
       font: 80px/1.1em 'opensans-bold', sans-serif;
       letter-spacing: -1px;
       margin: 0 auto 12px auto;
    }
-
 }
 
+
 @media only screen and (max-width: 900px) {
-
-    /* header styles */
-
+    /* header */
    header .banner { padding-bottom: 12px; }
    header .banner-text h1 {
       font: 78px/1.1em 'opensans-bold', sans-serif;
@@ -35,6 +32,7 @@
       width: 65%;
       margin: 12px auto;
    }
+
    /* nav-wrap */
    #nav-wrap {
       font: 11px 'opensans-bold', sans-serif;
@@ -42,19 +40,14 @@
    }
 
    /* roadmap */
-
    #roadmap h1 { font: 16px/24px 'opensans-bold', sans-serif; }
    #roadmap .main-col { padding-right: 5%; }   
-
-
 }
 
+
 /* style tablet */
-
 @media only screen and (max-width: 768px) {
-
-   /* mobile navigasi */
-
+   /* navigasi */
    #nav-wrap {
       font: 12px 'opensans-bold', sans-serif;
       background: transparent !important;
@@ -81,7 +74,6 @@
       top: 0px;
       right: 30px;
    }
-
 	#nav-wrap > a:before,
    #nav-wrap > a:after {
 	   position: absolute;
@@ -120,7 +112,6 @@
       margin: 0 30px;
       clear: both;
    }
-
    ul#nav li {
       display: block;
       height: auto;      
@@ -130,7 +121,6 @@
       border-bottom: 1px solid #2D2E34;
       border-bottom-style: dotted; 
    }
-  
    ul#nav li a {  
       display: block;    
       margin: 0;
@@ -140,9 +130,7 @@
       border: none;
    }  
 
-
-   /* Header Styles */
-
+   /* Header */
    header .banner {
       padding-bottom: 12px;
       padding-top: 6px;
@@ -166,13 +154,10 @@
    header .sosial-media li { margin: 0 10px; }
 
 
-   /* About Section */
-   
+   /* About */
    #about .main-col { padding-right: 30px; }
 
-
    /* roadmap */
-
    #roadmap .header-col {
       padding-top: 0;
       margin-bottom: 48px;
@@ -182,21 +167,14 @@
    #roadmap .main-col { padding-right: 30px; }
    #roadmap h3, #roadmap .info { text-align: center; }
 
-
    /* Control navigasi */
    .flex-control-nav {
       text-align: center;
       margin-left: -30px;
    }
 
-
    /* footer */
-  
-   /* copyright */
-   footer .copyright li:before { content: none; }
-   footer .copyright li { margin-right: 12px; }
-
-   /* sosial media */
+   /* footer sosial media */
    footer .row .twelve ul.sosial-media {
       margin-left: 30%;
       font-size: 25px;
@@ -208,14 +186,11 @@
 }
 
 /* mobile style */
-
 @media only screen and (max-width: 480px) {
-
    /* navigasi */
    #nav-wrap ul#nav { width: auto; float: none; }
 
-   /* header styles */
-
+   /* header */
    header .banner { padding-top: 24px; }
    header .banner-text h1 {
       font: 40px/1.1em 'opensans-bold', sans-serif;      
@@ -231,8 +206,7 @@
    header .sosial-media li { margin: 0 6px; }
 
    /* footer */
-
-   /* sosial media */
+   /* footer sosial media */
    footer .row .twelve ul.sosial-media {
       margin-left: 9%;
       font-size: 25px;
@@ -241,11 +215,11 @@
    footer .row .twelve ul.sosial-media li{
       padding-left: 50px;
    }
-
 }
 
 /* mobile L */
 @media (max-width: 425px) {
+   /* footer sosial media */
    footer .row .twelve ul.sosial-media {
       margin-left: 9%;
       font-size: 25px;
