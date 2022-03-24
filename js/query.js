@@ -55,13 +55,10 @@ btnDetail.forEach(e => {
       getData(`${this.dataset.urlnft}`, `${this.dataset.atomurl}`);
    })
 })
-// format untuk mengubah angka menjadi digit dollar
 let formatter = new Intl.NumberFormat('en-US', {
    style: 'currency',
    currency: 'USD',
 });
-
-// mengubah digit dollar menjadi digit normal
 function toDigit(angka){
    return formatter.format(String(angka)).split('').slice(1, -3).join('').split(',').join('.');
 }
