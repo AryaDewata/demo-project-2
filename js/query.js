@@ -55,3 +55,29 @@ btnDetail.forEach(e => {
       getData(`${this.dataset.urlnft}`, `${this.dataset.atomurl}`);
    })
 })
+// format untuk mengubah angka menjadi digit dollar
+let formatter = new Intl.NumberFormat('en-US', {
+   style: 'currency',
+   currency: 'USD',
+});
+
+// mengubah digit dollar menjadi digit normal
+function toDigit(angka){
+   return formatter.format(String(angka)).split('').slice(1, -3).join('').split(',').join('.');
+}
+fetch('https://wax.api.atomicassets.io/atomicmarket/v1/stats/graph?symbol=WAX&collection_whitelist=samuraiworld')
+   .then(response => response.json())
+   .then(response => {
+      let dayVolume = response.data.results[1].volume;
+      console.log(response)
+      dayVolume = (`${toDigit(dayVolume)}`).split('.')[0] + (Number((`${toDigit(dayVolume)}`).split('.')[1][0]) + 1);
+      document.querySelector('#dayVol').innerHTML = `<h5 style="color: white"><i class="fas fa-chart-line" style="color: lightgreen"></i> 24h Volume : <span style="color: lightgreen">${dayVolume} WAX</span> ( Yesterday ) </h5>`;
+   });
+fetch('https://wax.api.atomicassets.io/atomicmarket/v1/stats/sales?symbol=WAX&collection_whitelist=samuraiworld')
+   .then(response => response.json())
+   .then(response => {
+      let totalVolume = response.data.result.volume;
+      console.log(response)
+      totalVolume = (`${toDigit(totalVolume)}`).split('.')[0] + (Number((`${toDigit(totalVolume)}`).split('.')[1][0]) + 1);
+      document.querySelector('#totalVol').innerHTML = `<h5 style="color: white"><i class="fas fa-chart-line" style="color: lightgreen"></i> Total Volume : <span style="color: lightgreen">${totalVolume} WAX</span> ( Now )</h5>`;
+   });
