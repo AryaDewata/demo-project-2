@@ -1,4 +1,4 @@
-let BULAN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const BULAN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 function timeConvert(num){
    let time = new Date(String(num).slice(0, 10) * 1000);
    let tanggal = time.getDate();
