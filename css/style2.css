@@ -31,7 +31,7 @@ body {
     /* background: #161415 url('../img/header-background.jpg') no-repeat top center; */
     /* background: #161415 url('https://i.pinimg.com/originals/a7/0e/3e/a70e3eeabc7867bd9373d18ffca41623.gif') no-repeat top center; */
     /* background: #161415 url('https://www.rocketchainsaw.com.au/wp-content/uploads/2020/07/Ghost-of-Tsushima-Town.jpg') no-repeat top center; */
-    background: url('../img/background.jpeg') no-repeat bottom center;
+    background: url('../img/background.jpeg') no-repeat center center;
     background-size: cover !important;
      -webkit-background-size: cover !important;
     text-align: center;
